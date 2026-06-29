@@ -110,21 +110,25 @@ CPU normalized and alarm returned to OK state.
  ├── sns-email-notification.png
  ├── alarm-back-to-ok.png
  └── architecture-diagram.png
- ---
+
+ --- 
+ 
 ## 📊 Key Learnings
-AWS CloudWatch monitoring & metrics
-Alarm creation & threshold tuning
-SNS email notification system
-EC2 performance testing using stress tool
-Real-time cloud observability pipeline
-🚀 Outcome
+
+-AWS CloudWatch monitoring & metrics
+-Alarm creation & threshold tuning
+-SNS email notification system
+-EC2 performance testing using stress tool
+-Real-time cloud observability pipeline
+
+## 🚀 Outcome
 
 ✔ Fully functional monitoring system
 ✔ Real-time CPU-based alerting
 ✔ Email notification system working
 ✔ Hands-on AWS DevOps observability experience
 
-👨‍💻 Author
+## 👨‍💻 Author
 
 Jeet Zala
 AWS Cloud & DevOps Portfolio Project
