@@ -97,21 +97,20 @@ CPU normalized and alarm returned to OK state.
 
 ---
 
-## 📁 Screenshot Directory Structure
- /screenshots
-  ├── ec2-instance-running.png
-  ├── cloudwatch-alarm-created.png
-  ├── alarm-configuration-details.png
-  ├── sns-topic-created.png
-  ├── sns-subscription-confirmed.png
-  ├── ec2-ssh-connected.png
-  ├── cpu-stress-test-running.png
-  ├── cloudwatch-alarm-triggered.png
-  ├── sns-email-notification.png
-  ├── alarm-back-to-ok.png
-  └── architecture-diagram.png
+## 💰 Cost Optimization
 
- --- 
+This project was designed using AWS Free Tier eligible services.
+
+Resources used:
+
+- Amazon S3
+- CodePipeline
+- CodeBuild
+- IAM
+
+Always monitor AWS billing and remove unused resources after testing.
+
+---
  
 ## 📊 Key Learnings
 
