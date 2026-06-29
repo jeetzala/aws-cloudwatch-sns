@@ -1,18 +1,17 @@
 # 🚨 AWS CloudWatch Monitoring & SNS Alerting System (Project 7)
 
-![AWS](https://img.shields.io/badge/AWS-Cloud%20Monitoring-orange)
-![CloudWatch](https://img.shields.io/badge/CloudWatch-Alarm-blue)
-![SNS](https://img.shields.io/badge/SNS-Email%20Alerts-red)
-![EC2](https://img.shields.io/badge/EC2-Compute-green)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+A real-time cloud monitoring and alerting system built using AWS CloudWatch and SNS. This project demonstrates how an EC2 instance can be monitored for CPU usage and automatically trigger email alerts when thresholds are exceeded.
 
 ---
 
-## 📌 Overview
+## 🚀 Project Overview
 
-This project demonstrates a real-time AWS monitoring and alerting system using **Amazon CloudWatch and Amazon SNS**.
+This project implements an automated monitoring and alerting system on AWS.
 
-An EC2 instance is monitored for CPU utilization, and when usage exceeds a threshold, an automatic email alert is triggered.
+An EC2 instance is monitored using **Amazon CloudWatch metrics**.  
+When CPU utilization exceeds a defined threshold, a **CloudWatch alarm is triggered**, which sends a notification via **Amazon SNS (email alert)**.
+
+This simulates real-world DevOps observability and incident response systems.
 
 ---
 
@@ -26,108 +25,110 @@ An EC2 instance is monitored for CPU utilization, and when usage exceeds a thres
 
 | Service | Purpose |
 |----------|----------|
-| Amazon EC2 | Runs Linux instance for CPU testing |
+| Amazon EC2 | Runs Linux instance for CPU load testing |
 | Amazon CloudWatch | Monitors CPU metrics and triggers alarms |
 | Amazon SNS | Sends email notifications |
 | IAM | Manages permissions |
 
 ---
 
-## 🚀 Project Workflow
-
-
-EC2 Instance
-↓
-CloudWatch Metrics (CPU Utilization)
-↓
-CloudWatch Alarm
-↓
-SNS Topic
-↓
-Email Notification
-
-
----
-
-## ⚙️ Implementation Steps
-
----
-
-### 1. EC2 Instance Running
-
-![EC2 Instance](screenshots/ec2-instance-running.png)
+## 📁 Project Structure
+aws-cloudwatch-sns-project-7/
+│
+├── README.md
+└── screenshots/
+├── ec2-instance-running.png
+├── cloudwatch-alarm-created.png
+├── alarm-configuration-details.png
+├── sns-topic-created.png
+├── sns-subscription-confirmed.png
+├── ec2-ssh-connected.png
+├── cpu-stress-test-running.png
+├── cloudwatch-alarm-triggered.png
+├── sns-email-notification.png
+├── alarm-back-to-ok.png
+└── architecture-diagram.png
 
 ---
 
-### 2. CloudWatch Alarm Created
+## ✨ Features
 
-![CloudWatch Alarm](screenshots/cloudwatch-alarm-created.png)
+- EC2 CPU monitoring using CloudWatch
+- Threshold-based alarm configuration
+- Real-time email alerts using SNS
+- Linux stress testing for load simulation
+- End-to-end AWS monitoring pipeline
+- Fully automated alerting system
+- AWS Free Tier compatible setup
 
 ---
 
-### 3. Alarm Configuration Details
+## 📸 Implementation Screenshots
+
+---
+
+### 🖥️ EC2 Instance Running
+
+![EC2 Instance Running](screenshots/ec2-instance-running.png)
+
+---
+
+### 📊 CloudWatch Alarm Created
+
+![CloudWatch Alarm Created](screenshots/cloudwatch-alarm-created.png)
+
+---
+
+### ⚙️ Alarm Configuration Details
 
 ![Alarm Configuration](screenshots/alarm-configuration-details.png)
 
 ---
 
-### 4. SNS Topic Created
+### 📢 SNS Topic Created
 
-![SNS Topic](screenshots/sns-topic-created.png)
-
----
-
-### 5. SNS Subscription Confirmed
-
-![SNS Subscription](screenshots/sns-subscription-confirmed.png)
+![SNS Topic Created](screenshots/sns-topic-created.png)
 
 ---
 
-### 6. EC2 SSH Connection
+### 📬 SNS Subscription Confirmed
 
-```bash id="q2k1aa"
+![SNS Subscription Confirmed](screenshots/sns-subscription-confirmed.png)
+
+---
+
+### 🔐 EC2 SSH Connection
+
+```bash
 ssh -i your-key.pem ec2-user@<public-ip>
-
-7. CPU Stress Test Running
+🔥 CPU Stress Test Running
 stress --cpu 2 --timeout 300
+🚨 CloudWatch Alarm Triggered
 
-8. CloudWatch Alarm Triggered
+📩 SNS Email Notification
 
-9. SNS Email Notification Received
+✅ Alarm Back to OK State
 
-10. Alarm Back to OK State
+🎯 Key Learnings
+-AWS CloudWatch monitoring and metrics
+-Alarm creation and threshold tuning
+-SNS email notification system
+-EC2 performance stress testing
+-Real-time cloud observability
+-End-to-end monitoring pipeline
 
-📁 Screenshot Folder Structure
-screenshots/
- ├── ec2-instance-running.png
- ├── cloudwatch-alarm-created.png
- ├── alarm-configuration-details.png
- ├── sns-topic-created.png
- ├── sns-subscription-confirmed.png
- ├── ec2-ssh-connected.png
- ├── cpu-stress-test-running.png
- ├── cloudwatch-alarm-triggered.png
- ├── sns-email-notification.png
- ├── alarm-back-to-ok.png
- └── architecture-diagram.png
-🎯 Key Skills Learned
-AWS CloudWatch Monitoring
-Alarm Configuration & Threshold Setup
-SNS Email Notification System
-EC2 Performance Testing
-Linux Stress Testing
-Real-time Cloud Observability Pipeline
 💰 Cost Optimization
-Uses AWS Free Tier services only
-EC2 t2.micro instance
-CloudWatch free tier monitoring
-SNS free email notifications
-🧹 Cleanup Steps
-Delete CloudWatch Alarm
-Delete SNS Topic and Subscription
-Stop or terminate EC2 instance
+-Uses AWS Free Tier services only
+-EC2 t2.micro instance
+-CloudWatch free monitoring
+-SNS free email notifications
+
+🧹 Cleanup Performed
+-CloudWatch alarm deleted
+-SNS topic and subscription removed
+-EC2 instance terminated
+
 👨‍💻 Author
 
 Jeet Zala
-
 AWS Cloud & DevOps Portfolio Project
