@@ -95,7 +95,9 @@ Email alert successfully received.
 ![SNS Subscription Confirmed](screenshots/alarm-back-to-ok.png)
 CPU normalized and alarm returned to OK state.
 
-📁 Screenshot Directory Structure
+---
+
+## 📁 Screenshot Directory Structure
 /screenshots
  ├── ec2-instance-running.png
  ├── cloudwatch-alarm-created.png
@@ -108,8 +110,8 @@ CPU normalized and alarm returned to OK state.
  ├── sns-email-notification.png
  ├── alarm-back-to-ok.png
  └── architecture-diagram.png
- 
-📊 Key Learnings
+ ---
+## 📊 Key Learnings
 AWS CloudWatch monitoring & metrics
 Alarm creation & threshold tuning
 SNS email notification system
