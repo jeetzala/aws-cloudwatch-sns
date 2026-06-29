@@ -98,35 +98,35 @@ CPU normalized and alarm returned to OK state.
 ---
 
 ## 📁 Screenshot Directory Structure
-/screenshots
- ├── ec2-instance-running.png
- ├── cloudwatch-alarm-created.png
- ├── alarm-configuration-details.png
- ├── sns-topic-created.png
- ├── sns-subscription-confirmed.png
- ├── ec2-ssh-connected.png
- ├── cpu-stress-test-running.png
- ├── cloudwatch-alarm-triggered.png
- ├── sns-email-notification.png
- ├── alarm-back-to-ok.png
- └── architecture-diagram.png
+ /screenshots
+  ├── ec2-instance-running.png
+  ├── cloudwatch-alarm-created.png
+  ├── alarm-configuration-details.png
+  ├── sns-topic-created.png
+  ├── sns-subscription-confirmed.png
+  ├── ec2-ssh-connected.png
+  ├── cpu-stress-test-running.png
+  ├── cloudwatch-alarm-triggered.png
+  ├── sns-email-notification.png
+  ├── alarm-back-to-ok.png
+  └── architecture-diagram.png
 
  --- 
  
 ## 📊 Key Learnings
 
--AWS CloudWatch monitoring & metrics
--Alarm creation & threshold tuning
--SNS email notification system
--EC2 performance testing using stress tool
--Real-time cloud observability pipeline
+ -AWS CloudWatch monitoring & metrics
+ -Alarm creation & threshold tuning
+ -SNS email notification system
+ -EC2 performance testing using stress tool
+ -Real-time cloud observability pipeline
 
 ## 🚀 Outcome
 
-✔ Fully functional monitoring system
-✔ Real-time CPU-based alerting
-✔ Email notification system working
-✔ Hands-on AWS DevOps observability experience
+ ✔ Fully functional monitoring system
+ ✔ Real-time CPU-based alerting
+ ✔ Email notification system working
+ ✔ Hands-on AWS DevOps observability experience
 
 ## 👨‍💻 Author
 
