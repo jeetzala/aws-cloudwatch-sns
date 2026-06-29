@@ -59,7 +59,7 @@ architecture-diagram.png
 ## ⚙️ Implementation Steps
 
 ### 1. EC2 Instance Running
-**Screenshot:** `ec2-instance-running.png`  
+![EC2 Instance Running](screenshots/ec2-instance-running.png)
 EC2 instance successfully launched and running.
 
 ---
