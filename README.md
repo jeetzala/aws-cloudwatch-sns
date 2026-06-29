@@ -98,27 +98,22 @@ CPU normalized and alarm returned to OK state.
 ---
 
 ## 💰 Cost Optimization
-
-This project was designed using AWS Free Tier eligible services.
-
-Resources used:
-
-- Amazon S3
-- CodePipeline
-- CodeBuild
-- IAM
-
-Always monitor AWS billing and remove unused resources after testing.
+- Uses AWS Free Tier services only
+- EC2 t2.micro instance
+- CloudWatch free tier monitoring
+- SNS free email notifications
 
 ---
  
-## 📊 Key Learnings
+## 🎯 Key Skills Learned
+- AWS CloudWatch Monitoring
+- Alarm Configuration & Threshold Setup
+- SNS Email Notification System
+- EC2 Performance Testing
+- Linux Stress Testing
+- Real-time Cloud Observability Pipeline
 
- -AWS CloudWatch monitoring & metrics
- -Alarm creation & threshold tuning
- -SNS email notification system
- -EC2 performance testing using stress tool
- -Real-time cloud observability pipeline
+---
 
 ## 🚀 Outcome
 
@@ -126,6 +121,15 @@ Always monitor AWS billing and remove unused resources after testing.
  ✔ Real-time CPU-based alerting
  ✔ Email notification system working
  ✔ Hands-on AWS DevOps observability experience
+
+ ---
+
+ ## 🧹 Cleanup Steps
+- Delete CloudWatch Alarm
+- Delete SNS Topic and Subscription
+- Stop or terminate EC2 instance
+
+---
 
 ## 👨‍💻 Author
 
