@@ -19,20 +19,7 @@ An EC2 instance is continuously monitored using **Amazon CloudWatch**, and when 
 ## 🏗️ Architecture Diagram
 
 
-EC2 Instance
-↓
-CloudWatch Metrics (CPU Utilization)
-↓
-CloudWatch Alarm
-↓
-SNS Topic
-↓
-Email Notification
-
-
-📌 Architecture Image (optional):
-
-architecture-diagram.png
+![Architecture Diagram](screenshots/architecture-diagram.png)
 
 
 ---
@@ -65,52 +52,47 @@ EC2 instance successfully launched and running.
 ---
 
 ### 2. CloudWatch Alarm Created
-**Screenshot:** `cloudwatch-alarm-created.png`  
+![CloudWatch Alarm Created](screenshots/cloudwatch-alarm-created.png)
 CloudWatch alarm configured for CPUUtilization metric.
 
 ---
 
 ### 3. Alarm Configuration
-**Screenshot:** `alarm-configuration-details.png`  
+![Alarm Configuration](screenshots/alarm-configuration-details.png)  
 Threshold, evaluation period, and conditions defined.
 
 ---
 
 ### 4. SNS Topic Created
-**Screenshot:** `sns-topic-created.png`  
+![SNS Topic Created](screenshots/sns-topic-created.png)
 SNS topic created for email notifications.
 
 ---
 
 ### 5. SNS Subscription Confirmed
-**Screenshot:** `sns-subscription-confirmed.png`  
+![SNS Subscription Confirmed](screenshots/sns-subscription-confirmed.png)
 Email subscription successfully confirmed.
 
 ---
 
 ### 6. EC2 SSH Connection
-**Screenshot:** `ec2-ssh-connected.png`  
+![SNS Subscription Confirmed](screenshots/ec2-ssh-connected.png)
+Connection Successful
 
-```bash
-ssh -i your-key.pem ec2-user@<public-ip>
-7. CPU Stress Test
-
-Screenshot: cpu-stress-test-running.png
-
+### 7. CPU Stress Test
+![SNS Subscription Confirmed](screenshots/cpu-stress-test-running.png)
 stress --cpu 2 --timeout 300
-8. CloudWatch Alarm Triggered
 
-Screenshot: cloudwatch-alarm-triggered.png
+### 8. CloudWatch Alarm Triggered
+![SNS Subscription Confirmed](screenshots/cloudwatch-alarm-triggered.png)
 Alarm state changed to ALARM due to high CPU usage.
 
-9. SNS Email Notification
-
-Screenshot: sns-email-notification.png
+### 9. SNS Email Notification
+![SNS Subscription Confirmed](screenshots/sns-email-notification.png)
 Email alert successfully received.
 
-10. Alarm Back to OK State
-
-Screenshot: alarm-back-to-ok.png
+### 10. Alarm Back to OK State
+![SNS Subscription Confirmed](screenshots/alarm-back-to-ok.png)
 CPU normalized and alarm returned to OK state.
 
 📁 Screenshot Directory Structure
@@ -126,6 +108,7 @@ CPU normalized and alarm returned to OK state.
  ├── sns-email-notification.png
  ├── alarm-back-to-ok.png
  └── architecture-diagram.png
+ 
 📊 Key Learnings
 AWS CloudWatch monitoring & metrics
 Alarm creation & threshold tuning
